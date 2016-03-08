@@ -58,6 +58,7 @@
     <Compile Include="ContextMessage.cs" />
     <Compile Include="DirectMessageConversation.cs" />
     <Compile Include="RPCMessages\DeletedResponse.cs" />
+    <Compile Include="RPCMessages\CustomEmojiListResponse.cs" />
     <Compile Include="RPCMessages\FindTeamResponse.cs" />
     <Compile Include="RPCMessages\GroupUnarchiveResponse.cs" />
     <Compile Include="RPCMessages\GroupSetTopicResponse.cs" />

@@ -1,4 +1,5 @@
 ﻿using Newtonsoft.Json;
+using SlackAPI.RPCMessages;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -519,6 +520,11 @@ namespace SlackAPI
         {
             var param = new Tuple<string, string>("user", user);
             APIRequestWithToken(callback, param);
+        }
+
+        public void GetCustomEmojiList(Action<EmojiListResponse> callback)
+        {
+            APIRequestWithToken(callback);
         }
 
         public void PostMessage(
